@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade DOM</title>
+</head>
+<body>
+  <h1>Interações DOM</h1>
+
+  <div>
+    <button id="increment-btn">Incrementar</button>
+    <button id="decrement-btn">Decrementar</button>
+    <span>Contador: <strong id="counter-display">0</strong></span>
+  </div>
+
+  <div style="margin-top: 20px;">
+    <input type="text" id="text-input" placeholder="Digite uma mensagem e pressione Enter">
+    <p>Caracteres (sem espaço): <span id="char-count">0</span></p>
+    <div id="text-container"></div>
+  </div>
+
+  <div style="margin-top: 20px;">
+    <label for="item-type">Escolha o tipo de lista:</label>
+    <select id="item-type">
+      <option value="ul">Lista não ordenada</option>
+      <option value="ol">Lista ordenada</option>
+    </select>
+    <button id="add-item-btn">Adicionar item</button>
+    <div id="item-container"></div>
+  </div>
+
+  <div style="margin-top: 20px;">
+    <button id="reset-btn">Resetar tudo</button>
+  </div>
+
+  <script src="js-atv-dom.js"></script>
+</body>
+</html>
