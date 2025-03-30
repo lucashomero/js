@@ -75,4 +75,56 @@ console.log(typeof z,`: ${z}`)
 
 // Coerção 
 // o javascript tenta de forma implicita/automatica converter um dos valores p um tipo compativel
-// console.log("10" + 5) -> 105
+console.log(10 + "5") 
+
+// Incrementar
+let number = 10
+number++
+console.log(number)
+
+// Incrementa após
+console.log("incremento depois", number++)
+console.log(number)
+
+// Incrementa antes
+console.log("incremento antes", ++number)
+
+
+// Conteudo (== " ") x Tipo (== )
+let one = 1
+let two = 2
+console.log(one == two)
+console.log(one == 1)
+console.log(one == "1")
+console.log(one != two)
+console.log(two != two)
+console.log(two != "2")
+
+
+// === Estritamente igual (conteudo e tipo)
+console.log(one === 1) // true
+console.log(one === "1") // false
+
+// !== Estritamente diferente de
+console.log(one !== two) // true
+console.log(one !== 1) // false
+
+
+// Divisao, resto e potenciação
+let value = 10  
+console.log(value)
+console.log(value **= 2)
+console.log(value %= 2)
+console.log(value /= 2)
+console.log(`final value ${value}`)
+
+// Operadores Lógicos
+let k = true
+let s = false
+console.log(k && s)
+console.log(k || s)
+console.log(!s)
+
+
+
+
