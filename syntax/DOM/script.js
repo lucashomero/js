@@ -1,2 +1,0 @@
-// Document Object Modal (DOM)
-// 
