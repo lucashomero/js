@@ -1,63 +1,46 @@
-// // eventos
-// // addEventListener (evento, funcao)
+// 10. Eventos no DOM
 
-// window.addEventListener("load", () => {
-//     console.log("a pagina foi carregada")
-// })
-
-// addEventListener("click", (event) => {
-//     // Impede a pagina de recarregar com o evento click
-//     // event.preventDefault()
-
-//     // Retorna todas as inf do evento
-//     // console.log(event)
-    
-//     // Retorna o elemento clicado
-//     console.log(event.target)
-    
-//     // Retorna o textContent (conteudo) clicado
-//     console.log(event.target.textContent)
-
-
-// })
-
-
-// const ul = document.querySelector("ul")
-
-// ul.addEventListener("scroll", (event) => {
-//     // retorna o elemento que esta acionando o evento
-//     console.log(event)
-//     // distancia da lista
-//     console.log(ul.scrollTop)
-// })
-
-// ul.addEventListener("scroll", (event) => {
-
-//     // indica o fim da lista e retorna ao inicio
-
-//     if(ul.scrollTop > 300){
-//         console.log("Fim da lista")
-//         ul.scrollTo({
-//             top:0,
-//             behavior: "smooth",
-//         })
-    
-//     }
-// })
-
-// // Indica a quantidade de vezes que disparou o evento
-// const button = document.querySelector("button")
-// button.addEventListener("click", (event) => {
-//     event.preventDefault()
-//     console.log("clicou")
-// })
-
-// Eventos de formulario
-// 
-
-const form = document.querySelector("form")
-
-form.onsubmit = (event) => {
+// Evento de carregamento da página
+window.addEventListener("load", () => {
+    console.log("A página foi carregada")
+  })
+  
+  // Evento de clique em qualquer lugar da página
+  addEventListener("click", (event) => {
+    // event.preventDefault() // Impede o comportamento padrão
+    console.log(event.target)              // Elemento clicado
+    console.log(event.target.textContent)  // Texto do elemento clicado
+  })
+  
+  // Evento de rolagem na lista
+  const ul = document.querySelector("ul")
+  ul.addEventListener("scroll", (event) => {
+    console.log(event)            // Detalhes do evento
+    console.log(ul.scrollTop)     // Distância rolada
+  })
+  
+  // Voltar ao topo ao chegar no fim da lista
+  ul.addEventListener("scroll", () => {
+    if (ul.scrollTop > 300) {
+      console.log("Fim da lista")
+      ul.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
+    }
+  })
+  
+  // Evento de clique no botão
+  const button = document.querySelector("button")
+  button.addEventListener("click", (event) => {
     event.preventDefault()
-    console.log("voce fez submit no formulario")
-}
+    console.log("clicou")
+  })
+  
+  // Evento de envio de formulário
+  const form = document.querySelector("form")
+  form.onsubmit = (event) => {
+    event.preventDefault()
+    console.log("você fez submit no formulário")
+  }
+  

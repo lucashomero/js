@@ -1,61 +1,67 @@
-// // Classes
-// const input = document.querySelector("#name")
+// ======================================================
+// 5. Manipulação de Classes no DOM
+// ======================================================
 
-// // Adiciona a classe
-// input.classList.add("input-error")
+const input = document.querySelector("#name")
 
-// // Remove a classe
-// input.classList.remove("input-error")
+// Adiciona a classe CSS ao elemento
+input.classList.add("input-error")
 
-// // Toggle
-// // Se não tem classe, adiciona. Se tem, remove
-// input.classList.toggle("input-error")
+// Remove a classe do elemento
+input.classList.remove("input-error")
 
-// Elemento, exemplo button
+// Alterna a classe: adiciona se não tiver, remove se já tiver
+input.classList.toggle("input-error")
+
+// ======================================================
+// 6. Manipulação de Estilos Inline
+// ======================================================
+
 const button = document.querySelector("button")
-button.style.backgroundColor = "orange"
+button.style.backgroundColor = "orange" // Define a cor de fundo
 
-// Criando Elementos
-const guests = document.querySelector("ul")
+// ======================================================
+// 7. Criação de Elementos no DOM
+// ======================================================
 
+const guests = document.querySelector("ul") // Seleciona a <ul> da lista
+
+// Criando um novo <li>
 const newGuest = document.createElement("li")
 
-const guestName = document.createElement("span") // Criando o elemento
-guestName.textContent = "Diego" // Atribuindo valor
-console.log(guestName) 
+// Criando e configurando <span> com o nome
+const guestName = document.createElement("span")
+guestName.textContent = "Diego"
 guestName.classList.add("guest")
+console.log(guestName)
 
-const guestSurname = document.createElement("span") // Criando o elemento
-guestSurname.textContent = "Fernandes" // Atribuindo valor
-console.log(guestSurname) 
+// Criando e configurando <span> com o sobrenome
+const guestSurname = document.createElement("span")
+guestSurname.textContent = "Fernandes"
+console.log(guestSurname)
 
-// Append, adiciona após o ultimo filho
-// newGuest.append(guestName, guestSurname)
-// Prepend, adiciona antes do primeiro filho
-// newGuest.prepend(guestSurname)
-// console.log(newGuest)
+// ======================================================
+// 8. Inserção de Elementos no DOM
+// ======================================================
 
-// Mais simples que o append e aceita apenas um argumento
-// newGuest.appendChild(guestName)
-// console.log(newGuest)
+// Formas de inserir filhos em um elemento:
 
+// newGuest.append(guestName, guestSurname)   // Adiciona no final (aceita vários elementos)
+// newGuest.prepend(guestSurname)             // Adiciona no início
+// newGuest.appendChild(guestName)            // Adiciona um único filho
 
-// Adicionando visualmente no documento web
-// const guestName = document.createElement("span") // Criando o elemento
+// Exemplo: adicionando direto na lista
 guests.append(guestName)
-guestName.textContent = "Diego" // Atribuindo valor
-guestName.classList.add("guest")
-// guests.prepend(guestName) // Adicionando no topo (prepend, antes do filho)
 
+// ======================================================
+// 9. Manipulação de Atributos
+// ======================================================
 
+const inputField = document.querySelector("input")
 
-// Manipulando Atributos
+// Define ou atualiza atributos
+// inputField.setAttribute("disabled", true)
+// inputField.setAttribute("type", "file")
 
-// Atualizar um atributo
-// input.setAttribute("disabled", true)
-// input.setAttribute("type","file")
-
-// Remover um atributo
-// input.removeAttribute("id")
-
-const input = document.querySelector("input")
+// Remove atributos
+// inputField.removeAttribute("id")
