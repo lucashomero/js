@@ -1,17 +1,24 @@
 ; Atividade 2 – DOM: conceitos básicos
 ; Descrição da atividade:
+
 ; • Você deverá criar uma página web interativa que inclui:
 ; o Contador de cliques: 
+
 ; ▪ Um botão que incrementa um contador e exibe o número de 
 ; cliques ao lado dele;
+
 ; ▪ Um segundo botão que decrementa o contador, sem permitir 
 ; valores negativos;
+
 ; • Você deve gerar um alerta para o usuário, informando que o 
 ; contador já está em zero;
+
 ; o Adicionar texto dinâmico: 
 ; ▪ Crie um campo de texto onde o usuário pode digitar uma 
 ; mensagem. Quando ele pressionar a tecla "Enter", o texto inserido 
 ; deve ser adicionado como um novo parágrafo na página.
+
+
 ; o Contador de caracteres:
 ; ▪ Mostra, em tempo real, o número de caracteres digitados no 
 ; campo de texto, sem incluir os espaços.

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 – DOM: conceitos básicos</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <input type="text" id="message" placeholder="digite sua mensagem">
+
+    <div id="messages"></div>
+
+    <br><br><br><br>
+    <p>Clicou <span id="contador">0</span> vezes.</p>
+    <button id="Incrementar">Incrementar</button>
+    <button id="Decrementar">Decrementar</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
