@@ -3,7 +3,7 @@ const btnDecrementar = document.getElementById("Decrementar")
 const contadorSpan = document.getElementById("contador")
 const input = document.getElementById("message")
 const messagesDiv = document.getElementById("messages")
-
+const charCount = document.createElement("p")
 
 let contador = 0
 
@@ -23,17 +23,30 @@ btnDecrementar.addEventListener("click", (event) => {
     }
 })
 
-// let nome = ""
-// const text = document.querySelector(".interect")
-// const newName = document.createElement("span")
-// text.addEventListener("submit", (event) => {
-// })
-
 input.addEventListener("keydown", function(event) {
     if (event.key === "Enter" && input.value.trim() !== "") {
         const novoParagrafo = document.createElement("p")
         novoParagrafo.textContent = input.value
         messagesDiv.appendChild(novoParagrafo)
-        input.value = ""
+        
+        input.addEventListener("keypress", (event) => {
+        console.log(event.key) // Somente caracteres imprimíveis
+        })
+        
     }
+    
+})
+
+// input.addEventListener("keydown", function(event){
+//     const text = input.value.replace(/\s/g, "")
+//     const novoParagrafo = document.createElement("p")
+//     novoParagrafo.textContent = text.length
+//     messagesDiv.appendChild(novoParagrafo)
+// })
+
+
+input.addEventListener("input", function () {
+    const text = input.value.replace(/\s/g, "")
+    charCount.textContent = `Caracteres (sem espaços): ${text.length}`
+    messagesDiv.appendChild(charCount)
 })

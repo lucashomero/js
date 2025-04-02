@@ -80,7 +80,9 @@
 //     console.log(value)
 //   })
   
-//   // Verificando se o padrão (letras) foi encontrado
+  // Verificando se o padrão (letras) foi encontrado
+//   const input = document.querySelector("input")
+//   const form = document.querySelector("form")
 //   form.addEventListener("submit", (event) => {
 //     event.preventDefault()
 //     const value = input.value
