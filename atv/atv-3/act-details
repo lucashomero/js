@@ -22,6 +22,8 @@
 ; o Botão de reset:
 ; ▪ Limpa todas as interações, zerando o contador e removendo os 
 ; parágrafos adicionados e as listas.
+; 
+; 
 ; Para construir a atividade você deverá realizar ações como:
 ; • Buscar os elementos na árvore DOM;
 ; • Guardar os elementos em variáveis;
