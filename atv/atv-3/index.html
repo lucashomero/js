@@ -14,10 +14,13 @@
             height: 100vh;
             margin: 0;
             font-family: sans-serif;
+            gap: 5px;
         }
 
-        input, p, button, span {
-            /* color: black; */
+        input, select {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-bottom: 10px;
         }
 
         button {
@@ -25,20 +28,32 @@
             font-size: 16px;
             margin-bottom: 10px;
         }
+
+        #message {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
     </style>
 </head>
-
 <body>
-    
-    <input type="text" id="message" placeholder="digite sua mensagem">
+    <label for="tipoLista">Escolha o tipo de lista</label>
+    <select id="tipoLista">
+        <option value="ol">Lista ordenada</option>
+        <option value="ul">Lista nao ordenada</option>
+    </select>
+    <button onclick="adicionarLista()">Adicionar Lista</button>
+    <div id="container"></div>
 
+    <input type="text" id="message" placeholder="digite sua mensagem">
     <div id="messages"></div>
 
-    <br><br><br><br>
     <p>Clicou <span id="contador">0</span> vezes.</p>
     <button id="Incrementar">Incrementar</button>
     <button id="Decrementar">Decrementar</button>
-    
+
+    <!-- Botão de Reset -->
+    <button id="reset">Resetar Página</button>
+
     <script src="script.js"></script>
 </body>
 </html>
