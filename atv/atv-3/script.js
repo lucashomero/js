@@ -39,7 +39,6 @@ input.addEventListener("keydown", (event) => {
         const novoParagrafo = document.createElement("p");
         novoParagrafo.textContent = input.value;
         messagesDiv.appendChild(novoParagrafo);
-        input.value = "";
         charCount.textContent = "Caracteres (sem espaços): 0";
     }
 });

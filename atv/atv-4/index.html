@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Item Table</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10rem;
+      font-family: sans-serif;
+    }
+
+    input, button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    table {
+      margin-top: 20px;
+      border-collapse: collapse;
+      width: 300px;
+    }
+
+    td, th {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="form">
+    <input type="text" id="itemInput" placeholder="Digite um item" />
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <table id="itemTable">
+    <thead>
+      <tr>
+        <th>Item</th>
+      </tr>
+    </thead>
+    <tbody id="itemBody">
+      <!-- Itens adicionados aparecerão aqui -->
+    </tbody>
+  </table>
+
+  <h3>Itens selecionados</h3>
+  <select id="itemSelect">
+    <option disabled selected>Selecione um item</option>
+  </select>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- 
+    <table>
+    <tr>  linha 1 
+      <td>Item 1</td> célula 1 
+    </tr>
+    <tr> linha 2 
+      <td>Item 2</td>  célula 1 
+    </tr>
+     </table> 
+     
+    <tr> → linha da tabela
+    <td> → célula que fica dentro da linha
+-->
