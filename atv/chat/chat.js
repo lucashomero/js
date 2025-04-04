@@ -1,5 +1,6 @@
 const input = document.getElementById("inputItem")
-const lista = document.querySelector("ul")
+const tabela = document.getElementById("tabelaCorpo")
+
 
 
 input.addEventListener("keypress", function(event) {
@@ -8,17 +9,23 @@ input.addEventListener("keypress", function(event) {
   const item = input.value.trim()
   if(item !== ""){
   //Add
-  const li = document.createElement("li")
-  li.textContent = item
-  lista.appendChild(li)
+  const tr = document.createElement("tr")
+  const td = document.createElement("td")
+  td.textContent = item
+  tr.appendChild(td)
+  tabela.appendChild(tr)
+  input.value = ""
+  
   //Remove
-  li.addEventListener("dblclick", function() {
-  lista.removeChild(li)
+  tr.addEventListener("dblclick", function() {
+  tabela.removeChild(tr)
   })
   input.value = ""; 
   } else {
     alert("Digite um campo valido")
   }
   }
+
+  
 
 })
