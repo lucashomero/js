@@ -86,9 +86,10 @@ input.addEventListener("keypress", function(event) {
       alert("Selecione um item primeiro.");
       return;
     }
-    //  
+    //  Remove li de uma lista, com base no valor textContent de um span dentro de um li
     const spans = lista.getElementsByTagName("span");
     for (let i = 0; i < spans.length; i++) {
+      // Acessa o <li> pai do <span>
       if (spans[i].textContent === valorSelecionado) {
         const li = spans[i].parentElement;
         lista.removeChild(li);
