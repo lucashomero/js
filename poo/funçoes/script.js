@@ -9,11 +9,13 @@ function createProduct(name){
     return product
 }
 
-// O new cria um novo objeto ultizando a estrutura da função construtora 
-const product1 = new createProduct("Teclado")
+// Função construtora não tem necessidade de usar o new
+// New é atribuído a classes
+const product1 = createProduct("Teclado")
 console.log(product1.name)
 product1.details()
 
+// O new cria um novo objeto ultizando a estrutura da função construtora 
 const product2 = new createProduct("Mouse")
 console.log(product2.name)
 console.log(product2)
