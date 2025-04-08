@@ -20,11 +20,11 @@ console.log(product.name, product.quantity)
 
 /*
  Optional Chaining
+ 
  -encadeamento opcional, qnd a propriedade ou função chamada é nullish (null or undefined), a expressão retorna undefined em vez de gerar erro
 
 -útil ao explorar o conteudo de um objeto quando não existe garantia da existência de determinadas propriedades obrigatórias
 */
-
 const usuario = {
     id: 1, 
     name: "Lucas",
@@ -43,3 +43,25 @@ const usuario = {
 
 // Optional Chaining
 console.log(usuario?.address?.street)
+
+
+
+/*
+
+Operador de coalescência nula (??)
+
+-Operador lógico que retorna o seu operando do lado direito quando o seu operador do lado esquerdo é NULL ou UNDEFINED. Caso contrário, ele retorna o seu operando do lado esquerdo.
+
+*/
+
+let content = null
+console.log(content ?? "Conteúdo padrão")
+
+const user2 = {
+    name: "Rodrigo",
+    avatar: undefined
+}
+
+console.log(user2.picture ?? "default.png")
+
+
