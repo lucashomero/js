@@ -5,7 +5,7 @@ const btnMarcar = document.getElementById("btnMarcar")
 const btnDesmarcar = document.getElementById("btnDesmarcar")
 const btnRemover = document.getElementById("btnRemover")
 
-// Adiciona valor a var Item, ao pressionar enter
+// Adiciona valor a var Item, ao pressionar enter 
 input.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
     const item = input.value.trim();

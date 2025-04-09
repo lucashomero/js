@@ -1,3 +1,7 @@
+// - Acessando propriedade dentro do objeto
+// - Optional Chaining
+// - Operador de coalescência nula
+
 //Criando um método e acessando uma propriedade dentro de um objeto
 const user = {
     name: "Lucas",
