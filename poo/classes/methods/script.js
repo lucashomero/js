@@ -25,3 +25,5 @@ class User {
 User.showMessage()
 
 // Porém não é possivel receber atributos pelo construtor, somente por parâmetros
+
+

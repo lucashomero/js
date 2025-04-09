@@ -7,14 +7,14 @@
 //     }
 // }
 // console.log("Segue o fluxo")
-    
+
 // Loop infinito 
 // let value = true
 // while(value) {
 //     console.log("Executando while")
 // }
 
-    //////////////
+//////////////
 
 // Do While
 // let value = 0 
@@ -24,7 +24,7 @@
 // } while (value < 10)
 // console.log("Segue o fluxo")
 
-    //////////////
+//////////////
 
 // For
 // Repete ate que a condição seja falsa
@@ -39,7 +39,7 @@
 //     console.log(`tabuada do sete ${number} x ${i} = ${tabuada}`)
 // }
 
-    //////////////
+//////////////
 
 // For in (percorre a propriedade)
 // Executa iterações a partir de um objeto e percorre as propriedades
@@ -50,11 +50,11 @@ let person = {
     email: "rodrigo@email.com",
 }
 
-for (let property in person){
+for (let property in person) {
     // Exibe o nome da propriedade
     console.log(property)
     // Exibe o conteúdo da propriedade
-    console.log(person[property])    
+    console.log(person[property])
 }
 
 let students = ["Rodrigo", "João", "Amanda"]
@@ -63,7 +63,7 @@ for (let index in students) {
     console.log(students[index])
 }
 
-    //////////////
+//////////////
 
 // For of (percorre o valor)
 // Itera sobre valores de um objeto iterável
@@ -79,6 +79,6 @@ let user = [{
     email: "lucas@email.com"
 }]
 
-for(let value of user) {
+for (let value of user) {
     console.log(value.email)
 }
