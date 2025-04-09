@@ -39,3 +39,38 @@ let date2 = new Date("2024-07-02T14:30:00")
 console.log(date2.toDateString())
 // Retorna somente a hora
 console.log(date2.toTimeString())
+
+
+
+// Exibindo data e hora formatada de acordo com a localidade
+let date3 = new Date("2003-08-24T20:30:15")
+
+// Exibe data e hora no formato local.
+console.log(date3.toLocaleDateString())
+console.log(date3.toLocaleTimeString())
+
+// Exibe a data e hora no formato escolhido
+console.log(date3.toLocaleDateString("pt-br"))
+console.log(date3.toLocaleTimeString("en"))
+
+
+// toLocaleString
+console.log(date3.toLocaleString())
+
+console.log(date3.toLocaleString("pt-br", {
+    dateStyle: "long",
+}))
+
+console.log(date3.toLocaleString("pt-br", {
+    day: "2-digit",
+    month: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit"
+}))
+
+// toLocaleString p formatar valores
+let amount = 12.5
+console.log(amount.toLocaleString("pt-br", {
+    style: "currency",
+    currency: "BRL",
+}))
