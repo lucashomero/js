@@ -1,0 +1,4 @@
+~ - permite atualizacoes automaticas para versoes compativeis. Permite receber patches e correcoes de bugs
+^ - indica que o npm pode instalar automaticamente a versao mais recente compativel, mas n a proxima versao incompativel
+Permite receber patches e correcoes de bugs, mas n grandes alteracoes de versao
+@ - Usar @ antes da versao, indica que o npm instalara a versao exata especificada
