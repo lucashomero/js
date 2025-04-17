@@ -3,7 +3,8 @@
     "server": "json-server server.json --port=3333",
     "build": "babel main.js --out-dir ./dist",
     "dev": "babel main.js --out-dir ./dist --watch",
-    "bundle": "webpack ./bundlers/src/js/index.js"
+    "bundle": "webpack ./bundlers/src/js/index.js",
+    "liveServer": "webpack serve"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.17"
@@ -18,6 +19,7 @@
     "html-webpack-plugin": "^5.6.3",
     "style-loader": "^4.0.0",
     "webpack": "^5.99.5",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
   }
 }
