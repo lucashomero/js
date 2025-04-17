@@ -1,8 +1,35 @@
 {
-    "products": [
-        {"id": "1", "name": "Mouse", "price": 150.25},
-        {"id": "2", "name": "Keyboard", "price": 50},
-        {"id": "3", "name": "Monitor", "price": 450}
-    ],
-    "users": []
+  "products": [
+    {
+      "id": "1",
+      "name": "Mouse",
+      "price": 150.25
+    },
+    {
+      "id": "2",
+      "name": "Keyboard",
+      "price": 50
+    },
+    {
+      "id": "3",
+      "name": "Monitor",
+      "price": 450
+    },
+    {
+      "id": "02f9",
+      "name": "microfone",
+      "price": "20"
+    },
+    {
+      "id": "de9e",
+      "name": "Mesa Gamer",
+      "price": "1200"
+    },
+    {
+      "id": "1744901749941",
+      "name": "Fone Gamer",
+      "price": "300"
+    }
+  ],
+  "users": []
 }
