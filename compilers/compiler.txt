@@ -1,0 +1,10 @@
+Compiladores
+
+Compiladores traduzem código de alto nível para código de máquina.
+Converte codigo escrito em uma versao especifica do JavaScript para outra versao, permitindo usar recursos mais recentes da linguagem mesmo em ambientes que nao oferecem suporte a essas funcionalidades (navegadores mais antigos)
+
+Transpilacao
+Compilacao para versoes anteriores
+Parser -> Transformer -> Generator
+
+Compiladores permitem utilizar as novidade da linguagem mesmo em ambientes que nao oferecem suporte a elas
