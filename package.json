@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "server": "json-server server.json --port=3333"
+    "server": "json-server server.json --port=3333",
+    "build": "babel main.js --out-dir ./dist"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.17"
