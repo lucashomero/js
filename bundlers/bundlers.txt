@@ -1,0 +1,5 @@
+Bundler
+Agrupa/Empacota diversos arquivos e suas dependencias em um ou mais pacotes com o objetivo de otimizar o carregamento de paginas web
+
+Funcionamento:
+Atraves da geracao de um grafico de dependencia e agrupamento 
