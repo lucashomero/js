@@ -1,0 +1,29 @@
+API - interface que disponibiliza um conjunto de funcionalidades para serem utilizadas
+ex: api de cep
+
+Uma API (Application Programming Interface) é um conjunto de regras que permite que dois sistemas se comuniquem entre si.
+
+É como um garçom em um restaurante:
+-Você (cliente) faz um pedido (requisição).
+-O garçom (API) leva esse pedido até a cozinha (servidor).
+-A cozinha prepara e devolve a comida (resposta).
+-O garçom entrega para você.
+
+Para que serve?
+Permitir que sistemas diferentes conversem.
+Compartilhar dados e funcionalidades sem expor os bastidores.
+Exemplo: um site pode usar a API do Google Maps para exibir um mapa sem recriar o sistema de mapas.
+
+Um app de clima pede dados à API de previsão do tempo:
+GET https//api.tempo.com/previsao?cidade=Brasilia
+
+A API responde com:
+{
+  "cidade": "Brasília",
+  "temperatura": 27,
+  "condição": "Ensolarado"
+}
+
+JSON - JavaScript Object Notation
+-notacao de objetos utilizado para representar dados
+-amplamente utilizado na comunicacao entre servidores e clientes
